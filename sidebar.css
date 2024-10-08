@@ -1,0 +1,41 @@
+body {}
+
+#page {
+	height: 100%;
+	background-color: #ffffff;
+	display: grid;
+	grid-template-areas:
+		'leftcol leftdragbar main rightdragbar rightcol';
+	grid-template-columns: 2fr 6px 6fr 6px 4fr;
+}
+
+#leftcol {
+	background-color: #ffffff;
+	overflow: auto;
+	grid-area: leftcol;
+}
+
+#leftdragbar {
+	background-color: #eeeeee;
+	grid-area: leftdragbar;
+	cursor: ew-resize;
+}
+
+#main {
+	background-color: #ffffff;
+	overflow: auto;
+	grid-area: main;
+}
+
+#rightdragbar {
+	background-color: #eeeeee;
+	grid-area: rightdragbar;
+	cursor: ew-resize;
+}
+
+
+#rightcol {
+	background-color: #ffffff;
+	overflow: auto;
+	grid-area: rightcol;
+}
